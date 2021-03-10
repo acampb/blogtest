@@ -23,6 +23,7 @@ Azure AutoTagger is a lightweight, low-cost serverless solution that can easily 
 
 ## Deployment
 
+{: .box-warning}
 > Important: You must have **Owner** permissions on the subscription you intend to deploy this to. The template will create a managed identity and assign it to the `Reader` and `Tag Contributor` roles.
 
 Use the **Deploy to Azure** button to easily deploy this solution in a subscription
