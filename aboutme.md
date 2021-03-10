@@ -1,16 +1,13 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+#subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am a seasoned IT professional with nearly 20 years of experience. I have a deep background and extensive experience with Microsoft technologies. I am currently a DevOps Engineer at [Softchoice](https://www.softchoice.com) where I help customers utilize Azure, GitHub, CI/CD Pipelines, Infrastructure as Code, and automation.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I live in central PA, am a husband to an awesome wife, father to two young children, an avid baseball fan/player/manager/coach, and enjoy hunting and fishing.
 
-What else do you need?
+*"Teaching, for me, is a repayment of something that was done for me. It’s a debt that I owe, not to the person who taught me, but to the people I have yet to teach." -- Don Jones, Be the Master*
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+![andrew](/assets/img/profile2.jpg)

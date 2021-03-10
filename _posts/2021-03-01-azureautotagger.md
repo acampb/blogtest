@@ -7,7 +7,7 @@ author: Andrew Campbell
 tags: [Azure, ARM Template, DevOps, PowerShell, Serverless, Functions]
 #pin: false
 thumbnail-img: assets/img/autotagger/autotagger-logo.png
-cover-img: assets/img/autotagger/autotagger-logo.png
+#cover-img: assets/img/autotagger/autotagger-logo.png
 #description: Quickly deploy a serverless solution using Event Grid and Functions to automate tagging of Azure resources with last modified data.
 ---
 
