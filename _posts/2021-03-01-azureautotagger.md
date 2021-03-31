@@ -17,7 +17,7 @@ Azure AutoTagger is a lightweight, low-cost serverless solution that can easily 
 
 * [**https://github.com/acampb/AzureAutoTaggerFunction**](https://github.com/acampb/AzureAutoTaggerFunction){:target="_blank"}: Contains the Azure Function PowerShell code
 
-![tagging](/blogtest/assets/img/autotagger/tagging-spedup.gif)
+![tagging](/assets/img/autotagger/tagging-spedup.gif)
 
 ## Deployment
 
@@ -54,7 +54,7 @@ az deployment create --location "West US" --template-file ".\azuredeploy.json" -
 
 Azure Event Grid allows you to build applications with event-based architectures. Configure the Azure resource you would like to subscribe to, and then give the event handler or WebHook endpoint to send the event to. Event Grid has built-in support for events coming from Azure services, like storage blobs, resource groups, and subscriptions. Event Grid also has support for your own events, using custom topics.
 
-![event-grid](/blogtest/assets/img/autotagger/event-grid.png)
+![event-grid](/assets/img/autotagger/event-grid.png)
 
 There are five concepts in Azure Event Grid that let you get going:
 
@@ -134,7 +134,7 @@ You may be thinking "wait, wont the Azure Function writing tags create an endles
 
 Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
 
-![functions](/blogtest/assets/img/autotagger/functions.png)
+![functions](/assets/img/autotagger/functions.png)
 
 A PowerShell Azure Function is represented as a PowerShell script that executes when triggered. Each function script has a related `function.json` file that defines how the function behaves, such as how it's triggered and its input and output parameters.
 
@@ -207,7 +207,7 @@ The entire solution consists of the six resources (pictured below) deployed to t
 
 All of the resources are suffixed using the ARM template function `uniqueString` derived from the Azure Subscription id. This is to avoid naming conflicts on the resources which require global uniqueness.
 
-![autotagger-rg](/blogtest/assets/img/autotagger/autotagger-rg.png)
+![autotagger-rg](/assets/img/autotagger/autotagger-rg.png)
 
 The Event Grid and Function App are the core components of the solution, the additional resources are deployed in support of the Azure Function:
 
