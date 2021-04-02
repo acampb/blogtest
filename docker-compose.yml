@@ -8,6 +8,6 @@ services:
       - "4000:4000"
       - "35729:35729"
     volumes:
-      - C:\\repos\\beautiful-jekyll:/srv/jekyll
+      - C:\\repos\\cloudlumberjack:/srv/jekyll
 
     command: jekyll serve --drafts --force-polling --livereload
