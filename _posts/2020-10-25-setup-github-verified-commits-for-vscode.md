@@ -7,8 +7,9 @@ author: Andrew Campbell
 tags: [GitHub, VSCode]
 #pin: false
 thumbnail-img: /assets/img/gh-verified/gh-verified-social.png
-
 ---
+
+![verified](/assets/img/gh-verified/gh-verified-social.png)
 
 Want to see that sweet :heavy_check_mark: **Verified** status on your GitHub commit history? This guide walks through how to setup and configure everything needed on a Windows system!
 
@@ -139,4 +140,5 @@ You should see `86400` as the configured value for both `default-cache-ttl` and 
 
 ![gpg-cachettl-2](/assets/img/gh-verified/gpg-cachettl-2.png)
 
-> Note: There is a good bit of guidance that states the `gpg-agent.conf` file needs to be in `%USERPROFILE%\.gnupg`, however this would never work for me. If you have trouble getting `gpg-agent.exe` to pick up the configuration changes try changing the file path and restarting the agent again.
+{: .box-note}
+NOTE: There is a good bit of guidance that states the `gpg-agent.conf` file needs to be in `%USERPROFILE%\.gnupg`, however this would never work for me. If you have trouble getting `gpg-agent.exe` to pick up the configuration changes try changing the file path and restarting the agent again.

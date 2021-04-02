@@ -11,6 +11,8 @@ gh-repo: acampb/azuredevops-psscriptanalyzer-prcomments
 gh-badge: [star, fork, follow]
 ---
 
+![ado-analyzer](/assets/img/ado-analyzer/ado-analyzer-social2.png)
+
 If you are using PowerShell you should be storing your code in a code repository. [GitHub](https://github.com){:target="_blank"} and [Azure DevOps](https://dev.azure.com){:target="_blank"} are great choices, but really any git repo will do. This isn't an article about why you should be using version control, I feel that's been covered at great length in the community already.
 
 This article is going to walk through leveraging Azure DevOps to perform static code analysis using [PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer){:target="_blank"} as part of a Pull Request workflow. Our pull request will initiate PSScriptAnalyzer, gather the results, and post each issue as a comment on the offending line of code in the pull request.
@@ -190,7 +192,8 @@ jobs:
         arguments: '-ScriptDirectory $(Build.Repository.LocalPath)/scripts'
 ```
 
-> Note: You may need to adjust the `filePath` parameter to where you stored the `Start-PSScriptAnalyzer.ps1` script, and the `arguments` to the directory where your PowerShell scripts are located.
+{: .box-note}
+Note: You may need to adjust the `filePath` parameter to where you stored the `Start-PSScriptAnalyzer.ps1` script, and the `arguments` to the directory where your PowerShell scripts are located.
 
 ![add-azure-pipelines](/assets/img/ado-analyzer/add-azure-pipelines.png)
 
@@ -208,7 +211,8 @@ Simply creating the `azure-pipelines.yml` file does not actually create the Pipe
 6. Do not run the pipeline, click the down arrow and click 'Save'
 7. The default pipeline name will be based on the Repo name, click `...` and `Rename/move`, and change the name to **PSScriptAnalyzer**
 
-> Note: The pipeline will not run correctly if it is started outside of a Pull Request. This is due to the way the `Start-PSScriptAnalyzer.ps1` script is written; it requires the pull request id to properly post a comment via the API.
+{: .box-note}
+Note: The pipeline will not run correctly if it is started outside of a Pull Request. This is due to the way the `Start-PSScriptAnalyzer.ps1` script is written; it requires the pull request id to properly post a comment via the API.
 
 ---
 

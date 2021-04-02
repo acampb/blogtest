@@ -10,6 +10,8 @@ thumbnail-img: /assets/img/gh-approvals/notification1.png
 #description: Implement deployment gating with manual approvals in GitHub Actions, now available with the Environments feature.
 ---
 
+![notification1](/assets/img/gh-approvals/notification1.png)
+
 I've loved GitHub Actions since they were released, but the one piece I always felt was missing was some kind of gating or more control around deployments. Now we can add manual approval requirements to our workflows through GitHub's new **Environments** configurations. Environments also support environment specific secrets in additional to repository-wide secrets.
 
 ## Create Environments
@@ -22,7 +24,8 @@ Let's start by creating our first environment for our project. From your GitHub 
 
 Click **New environment**, provide a name, and click **Configure environment**.
 
-| Note: If you target an environment name in your GitHub Actions workflow file and that environment name does not exist GitHub will automatically create it for you. Only repository admins can configure environments with required reviewers, timers, and secrets.
+{: .box-note}
+Note: If you target an environment name in your GitHub Actions workflow file and that environment name does not exist GitHub will automatically create it for you. Only repository admins can configure environments with required reviewers, timers, and secrets.
 
 Check the box for **Required reviewers** and enter at least user or team name, and click **Save protection rules**.
 

@@ -9,6 +9,8 @@ tags: [PowerShell, Windows Terminal, Azure, Git]
 thumbnail-img: /assets/img/shell/shell1.png
 ---
 
+![shell1](/assets/img/shell/shell1.png)
+
 One of the great things about PowerShell is that is so extensible and customizable. When sharing my screen with co-workers and customers a frequent exchange happens:
 
 > "Oh, what shell are you using?"
@@ -67,7 +69,8 @@ Import the module in your current shell with the following:
 Import-Module 'posh-git'
 ```
 
-| Note: We'll only see the git status integration appear when we are in a git-enabled directory (where a hidden .git directory exists).
+{: .box-warning}
+You'll only see the git status integration appear when we are in a git-enabled directory (where a hidden .git directory exists).
 
 ## Install Terminal-Icons
 
@@ -115,7 +118,8 @@ Open Windows Terminal settings, we will have JSON code blocks for each of our Te
 }
 ```
 
-| Note: Because this file is JSON, the line preceding our new fontFace line will need to have a comma added to the end of the line.
+{: .box-note}
+NOTE: Because this file is JSON, the line preceding our new fontFace line will need to have a comma added to the end of the line.
 
 ## Install oh-my-posh
 
