@@ -1,4 +1,19 @@
-## Authentication
+---
+title: Serverless Authentication Fun
+subtitle: Down the rabbit hole with ARM templates, Managed Identities, RBAC, and Azure Functions
+author: Andrew Campbell
+#date: 2021-01-06
+#categories: []
+tags: [Azure, ARM Template, DevOps, PowerShell, Serverless, Functions]
+#pin: false
+thumbnail-img: assets/img/autotagger/autotagger-logo.png
+gh-repo: acampb/azureautotagger
+gh-badge: [star, fork, follow]
+
+#cover-img: assets/img/autotagger/autotagger-logo.png
+#description: Quickly deploy a serverless solution using Event Grid and Functions to automate tagging of Azure resources with last modified data.
+---
+
 
 Getting authentication working correctly with this solution actually proved to be a bit of a challenge I wasn't expecting. Initially I created a System Assigned Managed Identity with the Function app, and added it to the `Reader` and `Tag Contributor` roles. The PowerShell runtime for Azure Functions actually handles this scenario natively very well. When your function is started it executes the `profile.ps1` file, and the default file has this section of code to authenticate to Azure built in.
 

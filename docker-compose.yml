@@ -10,4 +10,4 @@ services:
     volumes:
       - C:\\repos\\beautiful-jekyll:/srv/jekyll
 
-    command: jekyll serve --force-polling --livereload
+    command: jekyll serve --drafts --force-polling --livereload
