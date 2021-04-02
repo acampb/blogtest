@@ -1,15 +1,16 @@
 ---
 title: Setup GitHub verified commits for VSCode
-author: Andrew Campbell
-date: 2020-10-25
-categories: []
-tags: [GitHub, VSCode]
-pin: false
-image: /assets/img/gh-verified/gh-verified-social.png
 subtitle: Want to see that sweet Verified status on your GitHub commit history? This guide walks through how to setup and configure everything needed on a Windows system!
+author: Andrew Campbell
+#date: 2020-10-25
+#categories: []
+tags: [GitHub, VSCode]
+#pin: false
+thumbnail-img: /assets/img/gh-verified/gh-verified-social.png
+
 ---
 
-Want to see that sweet **Verified** status on your GitHub commit history? This guide walks through how to setup and configure everything needed on a Windows system!
+Want to see that sweet :heavy_check_mark: **Verified** status on your GitHub commit history? This guide walks through how to setup and configure everything needed on a Windows system!
 
 ## Install GnuPG (GPG)
 

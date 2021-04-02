@@ -1,17 +1,16 @@
 ---
 title: GitHub Actions now with Manual Approvals
+subtitle: Implement deployment gating with manual approvals in GitHub Actions, now available with the Environments feature.
 author: Andrew Campbell
-date: 2021-01-06
-categories: []
+#date: 2021-01-06
+#categories: []
 tags: [GitHub, GitHub Actions, DevOps, CICD Pipeline]
-pin: false
-image: /assets/img/gh-approvals/notification1.png
-description: Implement deployment gating with manual approvals in GitHub Actions, now available with the Environments feature.
+#pin: false
+thumbnail-img: /assets/img/gh-approvals/notification1.png
+#description: Implement deployment gating with manual approvals in GitHub Actions, now available with the Environments feature.
 ---
 
-## Overview
-
-I've loved GitHub Actions since they were released, but the one piece I always felt was missing was some kind of gating or more control around deployments. Now we can add manual approval requirements to our workflows through GitHubs new **Environments** configurations. Environments also support environment specific secrets in additional to repository-wide secrets.
+I've loved GitHub Actions since they were released, but the one piece I always felt was missing was some kind of gating or more control around deployments. Now we can add manual approval requirements to our workflows through GitHub's new **Environments** configurations. Environments also support environment specific secrets in additional to repository-wide secrets.
 
 ## Create Environments
 

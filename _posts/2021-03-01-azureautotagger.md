@@ -2,16 +2,10 @@
 title: Serverless tagging with Event Grid and Azure Functions
 subtitle: Quickly deploy a serverless solution using Event Grid and Functions to automate tagging of Azure resources with last modified data.
 author: Andrew Campbell
-#date: 2021-01-06
-#categories: []
 tags: [Azure, ARM Template, DevOps, PowerShell, Serverless, Functions]
-#pin: false
 thumbnail-img: assets/img/autotagger/autotagger-logo.png
 gh-repo: acampb/azureautotagger
 gh-badge: [star, fork, follow]
-
-#cover-img: assets/img/autotagger/autotagger-logo.png
-#description: Quickly deploy a serverless solution using Event Grid and Functions to automate tagging of Azure resources with last modified data.
 ---
 
 Azure AutoTagger is a lightweight, low-cost serverless solution that can easily be deployed to an Azure subscription. Once deployed Azure AutoTagger monitors for `ResourceWriteSucess` events within the subscription and triggers an Azure Function to automatically apply a `LastModifiedTimestamp` and `LastModifiedBy` tag. Any organization should develop and implement it's own tagging strategy ([Azure's Cloud Adoption Framework is a great start](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging){:target="_blank"}). This solution can be a complimentary piece to a more comprehensive tagging strategy, and can be useful when deployed to test/development/sandbox subscriptions where resources *sometimes* have a habit of sticking around longer than they were intended.
@@ -248,4 +242,3 @@ This ARM Template performs a subscription level deployment. It will initiate sev
 * Perform a linked template deployment to assign the Managed Identity to the `Reader` role. Uses [https://github.com/acampb/AzureAutoTagger/blob/main/rbac.json](https://github.com/acampb/AzureAutoTagger/blob/main/rbac.json){:target="_blank"}
 
 * Perform a linked template deployment to assign the Managed Identity to the `Tag Contributor` role. Uses [https://github.com/acampb/AzureAutoTagger/blob/main/rbac.json](https://github.com/acampb/AzureAutoTagger/blob/main/rbac.json){:target="_blank"}
-

@@ -1,15 +1,15 @@
 ---
 title: Azure DevOps PowerShell code analysis with Pull Request comments
+subtitle: Get static code analysis feedback on your PowerShell code hosted in Azure DevOps, using pipelines to create inline file comments within your pull requests.
 author: Andrew Campbell
-date: 2020-11-01
-categories: []
+#date: 2020-11-01
+#categories: []
 tags: [AzureDevOps, PowerShell, PullRequest, CICD Pipeline]
-pin: false
-image: /assets/img/ado-analyzer/ado-analyzer-social2.png
-description: Get static code analysis feedback on your PowerShell code hosted in Azure DevOps, using pipelines to create inline file comments within your pull requests.
+#pin: false
+thumbnail-img: /assets/img/ado-analyzer/ado-analyzer-social2.png
+gh-repo: acampb/azuredevops-psscriptanalyzer-prcomments
+gh-badge: [star, fork, follow]
 ---
-
-## Overview
 
 If you are using PowerShell you should be storing your code in a code repository. [GitHub](https://github.com){:target="_blank"} and [Azure DevOps](https://dev.azure.com){:target="_blank"} are great choices, but really any git repo will do. This isn't an article about why you should be using version control, I feel that's been covered at great length in the community already.
 

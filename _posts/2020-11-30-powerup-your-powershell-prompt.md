@@ -1,15 +1,13 @@
 ---
 title: PowerUp your PowerShell prompt
+subtitle: Improve your PowerShell experience with integrated command history and prediction, git status, file icons, fonts, and more.
 author: Andrew Campbell
-date: 2020-12-19
-categories: []
+#date: 2020-12-19
+#categories: []
 tags: [PowerShell, Windows Terminal, Azure, Git]
-pin: false
-image: /assets/img/shell/shell1.png
-description: Improve your PowerShell experience with integrated command history and prediction, git status, file icons, fonts, and more.
+#pin: false
+thumbnail-img: /assets/img/shell/shell1.png
 ---
-
-## Overview
 
 One of the great things about PowerShell is that is so extensible and customizable. When sharing my screen with co-workers and customers a frequent exchange happens:
 
