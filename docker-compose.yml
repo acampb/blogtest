@@ -8,6 +8,7 @@ services:
       - "4000:4000"
       - "35729:35729"
     volumes:
-      - C:\\repos\\cloudlumberjack:/srv/jekyll
+      - /Users/andrew/repos/cloudlumberjack:/srv/jekyll
+      # windows path - C:\\repos\\cloudlumberjack:/srv/jekyll
 
     command: jekyll serve --drafts --force-polling --livereload
